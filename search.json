@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "",
+    "text": "The model was run from the 01.01.1974 until the 31.12.2022.\n\n\n\n\n\nFigure 1: Ratio of max(actRG1)/maxRG1 and geological units of HRUs"
+  },
+  {
+    "objectID": "index.html#time-series",
+    "href": "index.html#time-series",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "3.1 Time series",
+    "text": "3.1 Time series\n\n\n\n\n\nFigure 3: Time series of normalized and rescaled values"
+  },
+  {
+    "objectID": "index.html#regime",
+    "href": "index.html#regime",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "3.2 Regime",
+    "text": "3.2 Regime\n\n\n\n\n\nFigure 4: Regime of hydrological year"
+  },
+  {
+    "objectID": "index.html#duration-curves",
+    "href": "index.html#duration-curves",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "3.3 Duration curves",
+    "text": "3.3 Duration curves\n\n\n\n\n\nFigure 5: Duration curves\n\n\n\n\n\n3.3.1 Interquartile range\nThe interquartile range (IQR) is the range between the 25th and 75th percentile, indicating the slope of the duration curve.\n\n\n\n\n\nFigure 6: Interquartile range (IQR) of the duration curves"
+  },
+  {
+    "objectID": "index.html#maps",
+    "href": "index.html#maps",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "4.1 Maps",
+    "text": "4.1 Maps\n\n\n\n\n\nFigure 7: Correlation of J2K output to ADES\n\n\n\n\n\n\n\n\n\nFigure 8: KGE of J2K output to ADES\n\n\n\n\n\n\n\n\n\nFigure 9: NSE of J2K output to ADES"
+  },
+  {
+    "objectID": "index.html#normalization-with-percentiles-and-median",
+    "href": "index.html#normalization-with-percentiles-and-median",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.1 Normalization with percentiles and median",
+    "text": "6.1 Normalization with percentiles and median\nAnother approach to normalize the data is to use the 25th and 75th percentile instead of the minimum and maximum. After that the data is rescaled around the median.\n\\[\nnorm(value)=\\frac{value-25Percentile(value)}{75Percentile(value)-25Percentile(value)}\n\\]\n\\[\nresc(value) = \\frac{norm(value)}{median(norm(value))}\n\\]\n\n6.1.1 Time series\n\n\n\n\n\nFigure 11: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.1.2 Regime\n\n\n\n\n\nFigure 12: Regime of hydrological year"
+  },
+  {
+    "objectID": "index.html#normalization-with-percentiles",
+    "href": "index.html#normalization-with-percentiles",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.2 Normalization with percentiles",
+    "text": "6.2 Normalization with percentiles\nOnly the normalization with percentiles but no rescaling.\n\n6.2.1 Time series\n\n\n\n\n\nFigure 13: Time series of normalized values\n\n\n\n\n\n\n6.2.2 Regime\n\n\n\n\n\nFigure 14: Regime of hydrological year"
+  },
+  {
+    "objectID": "index.html#normalization-with-percentiles-and-mean",
+    "href": "index.html#normalization-with-percentiles-and-mean",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.3 Normalization with percentiles and mean",
+    "text": "6.3 Normalization with percentiles and mean\nNormalization with percentiles but rescaling around the mean.\n\n6.3.1 Time series\n\n\n\n\n\nFigure 15: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.3.2 Regime\n\n\n\n\n\nFigure 16: Regime of hydrological year"
+  },
+  {
+    "objectID": "index.html#z-score-normalization",
+    "href": "index.html#z-score-normalization",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.4 Z-score normalization",
+    "text": "6.4 Z-score normalization\nZ-score of a value is calculated with the mean (\\(\\mu\\)) and the standard deviation (\\(\\sigma\\)): \\[\nnorm(value) = \\frac{value - \\mu}{\\sigma}\n\\] This is also the same normalization used for the calculation of the Standardized Precipitation Index (SPI) or the Standardized Piezometric Level Index (SPLI or IPS in french). The SPLI was calculated in the Explore2 project for the output of the model AquiFR and the reference data, and the model was evaluated using the NSE.\n\n6.4.1 Time series\n\n\n\n\n\nFigure 17: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.4.2 Regime\n\n\n\n\n\nFigure 18: Regime of hydrological year"
+  },
+  {
+    "objectID": "index.html#normalization-with-the-minimum-and-maximum-of-overlapping-period",
+    "href": "index.html#normalization-with-the-minimum-and-maximum-of-overlapping-period",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.5 Normalization with the minimum and maximum of overlapping period",
+    "text": "6.5 Normalization with the minimum and maximum of overlapping period\nSame approach as the initial one, but not with the all time minimum and maximum but rather the minimum and maximum of the time period greater then the 50th quantile of the whole time period.\n\n6.5.1 Time series\n\n\n\n\n\nFigure 19: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.5.2 Regime\n\n\n\n\n\nFigure 20: Regime of hydrological year\n\n\n\n\nIt’s really hard to decide visually for one normalization method."
+  },
+  {
+    "objectID": "index.html#euclidean-distance-between-the-different-normalization-approaches-and-the-ades-reference-data",
+    "href": "index.html#euclidean-distance-between-the-different-normalization-approaches-and-the-ades-reference-data",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "6.6 Euclidean distance between the different normalization approaches and the ADES reference data",
+    "text": "6.6 Euclidean distance between the different normalization approaches and the ADES reference data\nThe euclidean distance \\(dist=\\sqrt{\\sum{(x-y)^2}}\\) was calculated for each approach (\\(x\\)) to the ADES reference data (\\(y\\)) for every plot (time series, regime, duration curve). The mean values of all stations are shown in Figure 21.\n\n\n\n\n\nFigure 21: Mean euclidean distance between the normalization approaches and the ADES data for the different plots"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is about presenting the interim results of the Evaluation of the J2000 groundwater component."
+  },
+  {
+    "objectID": "rhone/index.html",
+    "href": "rhone/index.html",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "",
+    "text": "Hopefully here are soon the results of the Rhone catchment."
+  }
+]
