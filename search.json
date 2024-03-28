@@ -89,5 +89,12 @@
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
     "text": "Hopefully here are soon the results of the Rhone catchment."
+  },
+  {
+    "objectID": "loire/index.html",
+    "href": "loire/index.html",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "",
+    "text": "1 Decision for z-score normalization\nSince the z-score normalization is used for the evaluation of the Explore2 project, it is close to use it for reasons of comparability to use it here too. To unify it the data was monthly aggregated before the normalization. The normalized value is called Standardized Piezometric Level Index (SPLI) in the Explore2 report, which nomenclature will be used from now on. Also the begin of the comparison was set to the year 2004, so there is the most data for all stations available.\n\n\n\n\n\nFigure 1: Time series of SPLI\n\n\n\n\nFor the aggregation to average monthly values, hydrological years with less than 90% data availability were removed.\n\n\n\n\n\nFigure 2: Regime of hydrological year\n\n\n\n\n\n\n\n\n\nFigure 3: Duration curves\n\n\n\n\n\n\n\n\n\nFigure 4: NSE(SPLI) of J2K output to ADES\n\n\n\n\n\n\n2 Limitations due to the calibration\nIf you take a look at the plots, two unwanted patterns are recognizable:\n\nHigh frequency in time series, resulting in 95th-Percentile = maximum in duration curves \\(\\rightarrow\\) RG1_max is too small\nNo variation in time series and values around zero (the mean), resulting in IQR = 0 \\(\\rightarrow\\) RG1_k is too big\n\nThese two criteria give the possibility to evaluate/improve the groundwater component of HRUs with no piezometers in them.\n\n\n3 Evaluation criteria\nFor further analysis and the calibration of the model to improve the representation of the groundwater component multiple goodness-of-fit tests will be used. Since the main purpose of the model is to simulate the discharge in the Loire catchment, the Kling-Gupta efficiency (KGE) of the square root of the discharge, will be the criterion (also used in Explore2 for J2K model). For the groundwater component two different types of criteria will be used:\n\nif there are reference piezometers: the Nash-Sutcliffe efficiency of the SPLI, Correlation, time lag of maximum/minimum of the regime\n\nif there are no reference piezometers: difference of 95th-Percentile to maximum and IQR"
   }
 ]
