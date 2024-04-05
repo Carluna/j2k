@@ -4,77 +4,77 @@
     "href": "index.html",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
-    "text": "The model was run from the 01.01.1974 until the 31.12.2022.\n\n\n\n\n\nFigure 1: Ratio of max(actRG1)/maxRG1 and geological units of HRUs"
+    "text": "The model was run from the 01.01.1974 until the 31.12.2022.\n\n\n\n\n\n\n\n\nFigure 1: Ratio of max(actRG1)/maxRG1 and geological units of HRUs"
   },
   {
     "objectID": "index.html#time-series",
     "href": "index.html#time-series",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "3.1 Time series",
-    "text": "3.1 Time series\n\n\n\n\n\nFigure 3: Time series of normalized and rescaled values"
+    "text": "3.1 Time series\n\n\n\n\n\n\n\n\nFigure 3: Time series of normalized and rescaled values"
   },
   {
     "objectID": "index.html#regime",
     "href": "index.html#regime",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "3.2 Regime",
-    "text": "3.2 Regime\n\n\n\n\n\nFigure 4: Regime of hydrological year"
+    "text": "3.2 Regime\n\n\n\n\n\n\n\n\nFigure 4: Regime of hydrological year"
   },
   {
     "objectID": "index.html#duration-curves",
     "href": "index.html#duration-curves",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "3.3 Duration curves",
-    "text": "3.3 Duration curves\n\n\n\n\n\nFigure 5: Duration curves\n\n\n\n\n\n3.3.1 Interquartile range\nThe interquartile range (IQR) is the range between the 25th and 75th percentile, indicating the slope of the duration curve.\n\n\n\n\n\nFigure 6: Interquartile range (IQR) of the duration curves"
+    "text": "3.3 Duration curves\n\n\n\n\n\n\n\n\nFigure 5: Duration curves\n\n\n\n\n\n\n3.3.1 Interquartile range\nThe interquartile range (IQR) is the range between the 25th and 75th percentile, indicating the slope of the duration curve.\n\n\n\n\n\n\n\n\nFigure 6: Interquartile range (IQR) of the duration curves"
   },
   {
     "objectID": "index.html#maps",
     "href": "index.html#maps",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "4.1 Maps",
-    "text": "4.1 Maps\n\n\n\n\n\nFigure 7: Correlation of J2K output to ADES\n\n\n\n\n\n\n\n\n\nFigure 8: KGE of J2K output to ADES\n\n\n\n\n\n\n\n\n\nFigure 9: NSE of J2K output to ADES"
+    "text": "4.1 Maps\n\n\n\n\n\n\n\n\nFigure 7: Correlation of J2K output to ADES\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 8: KGE of J2K output to ADES\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 9: NSE of J2K output to ADES"
   },
   {
     "objectID": "index.html#normalization-with-percentiles-and-median",
     "href": "index.html#normalization-with-percentiles-and-median",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.1 Normalization with percentiles and median",
-    "text": "6.1 Normalization with percentiles and median\nAnother approach to normalize the data is to use the 25th and 75th percentile instead of the minimum and maximum. After that the data is rescaled around the median.\n\\[\nnorm(value)=\\frac{value-25Percentile(value)}{75Percentile(value)-25Percentile(value)}\n\\]\n\\[\nresc(value) = \\frac{norm(value)}{median(norm(value))}\n\\]\n\n6.1.1 Time series\n\n\n\n\n\nFigure 11: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.1.2 Regime\n\n\n\n\n\nFigure 12: Regime of hydrological year"
+    "text": "6.1 Normalization with percentiles and median\nAnother approach to normalize the data is to use the 25th and 75th percentile instead of the minimum and maximum. After that the data is rescaled around the median.\n\\[\nnorm(value)=\\frac{value-25Percentile(value)}{75Percentile(value)-25Percentile(value)}\n\\]\n\\[\nresc(value) = \\frac{norm(value)}{median(norm(value))}\n\\]\n\n6.1.1 Time series\n\n\n\n\n\n\n\n\nFigure 11: Time series of normalized and rescaled values\n\n\n\n\n\n\n\n6.1.2 Regime\n\n\n\n\n\n\n\n\nFigure 12: Regime of hydrological year"
   },
   {
     "objectID": "index.html#normalization-with-percentiles",
     "href": "index.html#normalization-with-percentiles",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.2 Normalization with percentiles",
-    "text": "6.2 Normalization with percentiles\nOnly the normalization with percentiles but no rescaling.\n\n6.2.1 Time series\n\n\n\n\n\nFigure 13: Time series of normalized values\n\n\n\n\n\n\n6.2.2 Regime\n\n\n\n\n\nFigure 14: Regime of hydrological year"
+    "text": "6.2 Normalization with percentiles\nOnly the normalization with percentiles but no rescaling.\n\n6.2.1 Time series\n\n\n\n\n\n\n\n\nFigure 13: Time series of normalized values\n\n\n\n\n\n\n\n6.2.2 Regime\n\n\n\n\n\n\n\n\nFigure 14: Regime of hydrological year"
   },
   {
     "objectID": "index.html#normalization-with-percentiles-and-mean",
     "href": "index.html#normalization-with-percentiles-and-mean",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.3 Normalization with percentiles and mean",
-    "text": "6.3 Normalization with percentiles and mean\nNormalization with percentiles but rescaling around the mean.\n\n6.3.1 Time series\n\n\n\n\n\nFigure 15: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.3.2 Regime\n\n\n\n\n\nFigure 16: Regime of hydrological year"
+    "text": "6.3 Normalization with percentiles and mean\nNormalization with percentiles but rescaling around the mean.\n\n6.3.1 Time series\n\n\n\n\n\n\n\n\nFigure 15: Time series of normalized and rescaled values\n\n\n\n\n\n\n\n6.3.2 Regime\n\n\n\n\n\n\n\n\nFigure 16: Regime of hydrological year"
   },
   {
     "objectID": "index.html#z-score-normalization",
     "href": "index.html#z-score-normalization",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.4 Z-score normalization",
-    "text": "6.4 Z-score normalization\nZ-score of a value is calculated with the mean (\\(\\mu\\)) and the standard deviation (\\(\\sigma\\)): \\[\nnorm(value) = \\frac{value - \\mu}{\\sigma}\n\\] This is also the same normalization used for the calculation of the Standardized Precipitation Index (SPI) or the Standardized Piezometric Level Index (SPLI or IPS in french). The SPLI was calculated in the Explore2 project for the output of the model AquiFR and the reference data, and the model was evaluated using the NSE.\n\n6.4.1 Time series\n\n\n\n\n\nFigure 17: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.4.2 Regime\n\n\n\n\n\nFigure 18: Regime of hydrological year"
+    "text": "6.4 Z-score normalization\nZ-score of a value is calculated with the mean (\\(\\mu\\)) and the standard deviation (\\(\\sigma\\)): \\[\nnorm(value) = \\frac{value - \\mu}{\\sigma}\n\\] This is also the same normalization used for the calculation of the Standardized Precipitation Index (SPI) or the Standardized Piezometric Level Index (SPLI or IPS in french). The SPLI was calculated in the Explore2 project for the output of the model AquiFR and the reference data, and the model was evaluated using the NSE.\n\n6.4.1 Time series\n\n\n\n\n\n\n\n\nFigure 17: Time series of normalized and rescaled values\n\n\n\n\n\n\n\n6.4.2 Regime\n\n\n\n\n\n\n\n\nFigure 18: Regime of hydrological year"
   },
   {
     "objectID": "index.html#normalization-with-the-minimum-and-maximum-of-overlapping-period",
     "href": "index.html#normalization-with-the-minimum-and-maximum-of-overlapping-period",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.5 Normalization with the minimum and maximum of overlapping period",
-    "text": "6.5 Normalization with the minimum and maximum of overlapping period\nSame approach as the initial one, but not with the all time minimum and maximum but rather the minimum and maximum of the time period greater then the 50th quantile of the whole time period.\n\n6.5.1 Time series\n\n\n\n\n\nFigure 19: Time series of normalized and rescaled values\n\n\n\n\n\n\n6.5.2 Regime\n\n\n\n\n\nFigure 20: Regime of hydrological year\n\n\n\n\nIt’s really hard to decide visually for one normalization method."
+    "text": "6.5 Normalization with the minimum and maximum of overlapping period\nSame approach as the initial one, but not with the all time minimum and maximum but rather the minimum and maximum of the time period greater then the 50th quantile of the whole time period.\n\n6.5.1 Time series\n\n\n\n\n\n\n\n\nFigure 19: Time series of normalized and rescaled values\n\n\n\n\n\n\n\n6.5.2 Regime\n\n\n\n\n\n\n\n\nFigure 20: Regime of hydrological year\n\n\n\n\n\nIt’s really hard to decide visually for one normalization method."
   },
   {
     "objectID": "index.html#euclidean-distance-between-the-different-normalization-approaches-and-the-ades-reference-data",
     "href": "index.html#euclidean-distance-between-the-different-normalization-approaches-and-the-ades-reference-data",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "6.6 Euclidean distance between the different normalization approaches and the ADES reference data",
-    "text": "6.6 Euclidean distance between the different normalization approaches and the ADES reference data\nThe euclidean distance \\(dist=\\sqrt{\\sum{(x-y)^2}}\\) was calculated for each approach (\\(x\\)) to the ADES reference data (\\(y\\)) for every plot (time series, regime, duration curve). The mean values of all stations are shown in Figure 21.\n\n\n\n\n\nFigure 21: Mean euclidean distance between the normalization approaches and the ADES data for the different plots"
+    "text": "6.6 Euclidean distance between the different normalization approaches and the ADES reference data\nThe euclidean distance \\(dist=\\sqrt{\\sum{(x-y)^2}}\\) was calculated for each approach (\\(x\\)) to the ADES reference data (\\(y\\)) for every plot (time series, regime, duration curve). The mean values of all stations are shown in Figure 21.\n\n\n\n\n\n\n\n\nFigure 21: Mean euclidean distance between the normalization approaches and the ADES data for the different plots"
   },
   {
     "objectID": "about.html",
@@ -95,6 +95,6 @@
     "href": "loire/index.html",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
-    "text": "1 Decision for z-score normalization\nSince the z-score normalization is used for the evaluation of the Explore2 project, it is close to use it for reasons of comparability to use it here too. To unify it the data was monthly aggregated before the normalization. The normalized value is called Standardized Piezometric Level Index (SPLI) in the Explore2 report, which nomenclature will be used from now on. Also the begin of the comparison was set to the year 2004, so there is the most data for all stations available.\n\n\n\n\n\nFigure 1: Time series of SPLI\n\n\n\n\nFor the aggregation to average monthly values, hydrological years with less than 90% data availability were removed.\n\n\n\n\n\nFigure 2: Regime of hydrological year\n\n\n\n\n\n\n\n\n\nFigure 3: Duration curves\n\n\n\n\n\n\n\n\n\nFigure 4: NSE(SPLI) of J2K output to ADES\n\n\n\n\n\n\n2 Limitations due to the calibration\nIf you take a look at the plots, two unwanted patterns are recognizable:\n\nHigh frequency in time series, resulting in 95th-Percentile = maximum in duration curves \\(\\rightarrow\\) RG1_max is too small\nNo variation in time series and values around zero (the mean), resulting in IQR = 0 \\(\\rightarrow\\) RG1_k is too big\n\nThese two criteria give the possibility to evaluate/improve the groundwater component of HRUs with no piezometers in them.\n\n\n3 Evaluation criteria\nFor further analysis and the calibration of the model to improve the representation of the groundwater component multiple goodness-of-fit tests will be used. Since the main purpose of the model is to simulate the discharge in the Loire catchment, the Kling-Gupta efficiency (KGE) of the square root of the discharge, will be the criterion (also used in Explore2 for J2K model). For the groundwater component two different types of criteria will be used:\n\nif there are reference piezometers: the Nash-Sutcliffe efficiency of the SPLI, Correlation, time lag of maximum/minimum of the regime\n\nif there are no reference piezometers: difference of 95th-Percentile to maximum and IQR"
+    "text": "1 Decision for z-score normalization\nSince the z-score normalization is used for the evaluation of the Explore2 project, it is close to use it for reasons of comparability to use it here too. To unify it the data was monthly aggregated before the normalization. The normalized value is called Standardized Piezometric Level Index (SPLI) in the Explore2 report, which nomenclature will be used from now on. Also the begin of the comparison was set to the year 2004, so there is the most data for all stations available.\n\n\n\n\n\n\n\n\nFigure 1: Time series of SPLI\n\n\n\n\n\nFor the aggregation to average monthly values, hydrological years with less than 90% data availability were removed.\n\n\n\n\n\n\n\n\nFigure 2: Regime of hydrological year\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Duration curves\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: NSE(SPLI) of J2K output to ADES\n\n\n\n\n\n\n\n2 Limitations due to the calibration\nIf you take a look at the plots, two unwanted patterns are recognizable:\n\nHigh frequency in time series, resulting in 95th-Percentile = maximum in duration curves \\(\\rightarrow\\) RG1_max is too small\nNo variation in time series and values around zero (the mean), resulting in IQR = 0 \\(\\rightarrow\\) RG1_k is too big\n\nThese two criteria give the possibility to evaluate/improve the groundwater component of HRUs with no piezometers in them.\n\n\n3 Evaluation criteria\nFor further analysis and the calibration of the model to improve the representation of the groundwater component multiple goodness-of-fit tests will be used. Since the main purpose of the model is to simulate the discharge in the Loire catchment, the Kling-Gupta efficiency (KGE) of the square root of the discharge, will be the criterion (also used in Explore2 for J2K model). For the groundwater component two different types of criteria will be used:\n\nif there are reference piezometers: the Nash-Sutcliffe efficiency of the SPLI, Correlation, time lag of maximum/minimum of the regime\n\nif there are no reference piezometers: difference of 95th-Percentile to maximum and IQR\n\n\n\n4 Identifying range of RG1_max and RG1_k for calibration\n\n\n\n\nTable 1: Cailbration parameters to identify calibration range\n\n\n\n\n\n\n\nRun\nRG1_max\nRG1_k\n\n\n\n\n1\n10\n10\n\n\n2\n10\n30\n\n\n3\n10\n180\n\n\n4\n10\n360\n\n\n5\n10\n500\n\n\n6\n50\n10\n\n\n7\n50\n30\n\n\n8\n50\n180\n\n\n9\n50\n360\n\n\n10\n50\n500\n\n\n11\n100\n10\n\n\n12\n100\n30\n\n\n13\n100\n180\n\n\n14\n100\n360\n\n\n15\n100\n500\n\n\n16\n500\n10\n\n\n17\n500\n30\n\n\n18\n500\n180\n\n\n19\n500\n360\n\n\n20\n500\n500\n\n\n21\n1000\n10\n\n\n22\n1000\n30\n\n\n23\n1000\n180\n\n\n24\n1000\n360\n\n\n25\n1000\n500\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: IQR and difference between maximum and 95th-percentile (max_perc) for each hgeoID"
   }
 ]
