@@ -102,20 +102,20 @@
     "href": "cluster/index.html",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
-    "text": "A cluster analysis for the regimes of all piezometers in the Loire catchment was conducted. The data was (so far) not checked. The monthly mean was calculated, then a z-score normalisation was executed and the longtime monthly mean calculated. Stations which inherited NAs afterwards were excluded for clustering.\n\n\n\n\n\n\n\n\n\n\nFigure 1: Cluster dendogram for hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: K-means clustering results for 4 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Regimes for 4 clusters - K-means clustering"
+    "text": "A cluster analysis for the regimes of all piezometers in the Loire catchment was conducted. The data was (so far) not checked. The monthly mean was calculated, then a z-score normalisation was executed and the longtime monthly mean calculated. Stations which inherited NAs afterwards were excluded for clustering.\n\n\n\n\n\n\n\n\n\n\nFigure 1: Cluster dendogram for hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Map - Hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: K-means clustering results for 4 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Regimes for 4 clusters - K-means clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Map - K-means clustering"
   },
   {
     "objectID": "cluster/index.html#hierarchical-clustering",
     "href": "cluster/index.html#hierarchical-clustering",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
-    "text": "Figure 1: Cluster dendogram for hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Regimes for 4 clusters - Hierarchical clustering"
+    "text": "Figure 1: Cluster dendogram for hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Map - Hierarchical clustering"
   },
   {
     "objectID": "cluster/index.html#k-means-clustering",
     "href": "cluster/index.html#k-means-clustering",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
-    "text": "Figure 3: K-means clustering results for 4 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Regimes for 4 clusters - K-means clustering"
+    "text": "Figure 4: K-means clustering results for 4 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Regimes for 4 clusters - K-means clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Map - K-means clustering"
   }
 ]
