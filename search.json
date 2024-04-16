@@ -117,5 +117,19 @@
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
     "text": "Figure 4: K-means clustering results for 4 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Regimes for 4 clusters - K-means clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Map - K-means clustering"
+  },
+  {
+    "objectID": "cluster/index.html#k-means-clustering-1",
+    "href": "cluster/index.html#k-means-clustering-1",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "2.1 K-means clustering",
+    "text": "2.1 K-means clustering\nA total of 6 clusters were chosen to see if its possible to distinguish better between influenced and not influenced piezometers.\n\n\n\n\n\n\n\n\nFigure 9: K-means clustering results for 6 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 10: Regimes for 6 clusters - K-means clustering"
+  },
+  {
+    "objectID": "cluster/index.html#random-forest-clustering",
+    "href": "cluster/index.html#random-forest-clustering",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "2.2 Random Forest clustering",
+    "text": "2.2 Random Forest clustering\nA Random Forest (RF) model was trained unsupervised with 5000 trees. The clustering was done using Partitioning Around Medoids (PAM) clustering for the proximity matrix of the RF output.\n\nrf &lt;- randomForest(x = df_m_wide2, ntree = 5000, proximity = TRUE)\nprox &lt;- rf$proximity\npam.rf &lt;- pam(prox, 6)\n\n\n\n\n\n\n\n\n\nFigure 11: Regimes for 6 clusters - Random Forest clustering"
   }
 ]
