@@ -138,14 +138,21 @@ window.Quarto = {
     <a class="nav-link" href="./loire/loire.html"> 
 <span class="menu-text">Loire</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cluster/cluster.html"> 
-<span class="menu-text">Cluster analysis</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clustering" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clustering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clustering">    
+        <li>
+    <a class="dropdown-item" href="./cluster/cluster.html">
+ <span class="dropdown-text">Cluster analysis</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cluster_map/cluster_map.html"> 
-<span class="menu-text">Cluster analysis mapview</span></a>
+        <li>
+    <a class="dropdown-item" href="./cluster_map/cluster_map.html">
+ <span class="dropdown-text">Cluster analysis mapview</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./rhone/rhone.html"> 
 <span class="menu-text">Rhône</span></a>
@@ -1371,7 +1378,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
