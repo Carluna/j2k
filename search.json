@@ -84,20 +84,6 @@
     "text": "This website is about presenting the interim results of the Evaluation of the J2000 groundwater component."
   },
   {
-    "objectID": "loire/loire.html",
-    "href": "loire/loire.html",
-    "title": "Evaluation of the J2000 groundwater component",
-    "section": "",
-    "text": "1 Decision for z-score normalization\nSince the z-score normalization is used for the evaluation of the Explore2 project, it makes sense to use it here as well for reasons of comparability. To unify it the data was monthly aggregated before the normalization. The normalized value is called Standardized Piezometric Level Index (SPLI) in the Explore2 report, which nomenclature will be used from now on. Also the begin of the comparison was set to the year 2004, so there is the most data for all stations available and the simulation time is reduced.\n\n\n\n\n\n\n\n\nFigure 1: Time series of SPLI\n\n\n\n\n\nFor the aggregation to average monthly values, hydrological years with less than 90% data availability were removed.\n\n\n\n\n\n\n\n\nFigure 2: Regime of hydrological year\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Duration curves\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: NSE(SPLI) of J2K output to ADES\n\n\n\n\n\n\n\n2 Limitations due to the calibration\nIf you take a look at the plots, two unwanted patterns are recognizable:\n\nHigh frequency in time series, resulting in 95th-Percentile = maximum in duration curves \\(\\rightarrow\\) RG1_max is too small\nNo variation in time series and values around zero (the mean), resulting in IQR = 0 \\(\\rightarrow\\) RG1_k is too big\n\nThese two criteria give the possibility to evaluate/improve the groundwater component of HRUs with no piezometers in them.\n\n\n3 Evaluation criteria\nFor further analysis and the calibration of the model to improve the representation of the groundwater component multiple goodness-of-fit tests will be used. Since the main purpose of the model is to simulate the discharge in the Loire catchment, the Kling-Gupta efficiency (KGE) of the square root of the discharge, will be the criterion (also used in Explore2 for J2K model). For the groundwater component two different types of criteria will be used:\n\nif there are reference piezometers: the Nash-Sutcliffe efficiency of the SPLI, Correlation, time lag of maximum/minimum of the regime\n\nif there are no reference piezometers: difference of 95th-Percentile to maximum and IQR\n\n\n\n4 Identifying range of RG1_max and RG1_k for calibration\n\n\n\n\nTable 1: Cailbration parameters to identify calibration range\n\n\n\n\n\n\n\n\nRun\nRG1_max\nRG1_k\n\n\n\n\n1\n10\n10\n\n\n2\n10\n30\n\n\n3\n10\n180\n\n\n4\n10\n360\n\n\n5\n10\n500\n\n\n6\n50\n10\n\n\n7\n50\n30\n\n\n8\n50\n180\n\n\n9\n50\n360\n\n\n10\n50\n500\n\n\n11\n100\n10\n\n\n12\n100\n30\n\n\n13\n100\n180\n\n\n14\n100\n360\n\n\n15\n100\n500\n\n\n16\n500\n10\n\n\n17\n500\n30\n\n\n18\n500\n180\n\n\n19\n500\n360\n\n\n20\n500\n500\n\n\n21\n1000\n10\n\n\n22\n1000\n30\n\n\n23\n1000\n180\n\n\n24\n1000\n360\n\n\n25\n1000\n500\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: IQR and difference between maximum and 95th-percentile (max_perc) for each hgeoID\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: IQR and difference between maximum and 95th-percentile (max_perc) for each hgeoID -"
-  },
-  {
-    "objectID": "rhone/rhone.html",
-    "href": "rhone/rhone.html",
-    "title": "Evaluation of the J2000 groundwater component",
-    "section": "",
-    "text": "Hopefully here are soon the results of the Rhone catchment."
-  },
-  {
     "objectID": "cluster/cluster.html",
     "href": "cluster/cluster.html",
     "title": "Evaluation of the J2000 groundwater component",
@@ -123,20 +109,41 @@
     "href": "cluster/cluster.html#k-means-clustering-1",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "2.1 K-means clustering",
-    "text": "2.1 K-means clustering\nA total of 6 clusters were chosen to see if its possible to distinguish better between influenced and not influenced piezometers.\n\n\n\n\n\n\n\n\nFigure 9: K-means clustering results for 6 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 10: Regimes for 6 clusters - K-means clustering"
+    "text": "2.1 K-means clustering\nA total of 6 clusters were chosen to see if its possible to distinguish better between influenced and not influenced piezometers.\n\n\n\n\n\n\n\n\nFigure 9: K-means clustering results for 6 clusters\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 10: Regimes for 6 clusters - K-means clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 11: Ratio of max(actRG1)/maxRG1 and geological units of HRUs"
   },
   {
     "objectID": "cluster/cluster.html#random-forest-clustering",
     "href": "cluster/cluster.html#random-forest-clustering",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "2.2 Random Forest clustering",
-    "text": "2.2 Random Forest clustering\nA Random Forest (RF) model was trained unsupervised with 5000 trees. The clustering was done using Partitioning Around Medoids (PAM) clustering for the proximity matrix of the RF output.\n\nrf &lt;- randomForest(x = df_m_wide2, ntree = 5000, proximity = TRUE)\nprox &lt;- rf$proximity\npam.rf &lt;- pam(prox, 6)\n\n\n\n\n\n\n\n\n\nFigure 11: Regimes for 6 clusters - Random Forest clustering"
+    "text": "2.2 Random Forest clustering\nA Random Forest (RF) model was trained unsupervised with 5000 trees. The clustering was done using Partitioning Around Medoids (PAM) clustering for the proximity matrix of the RF output.\n\nrf &lt;- randomForest(x = df_m_wide2, ntree = 5000, proximity = TRUE)\nprox &lt;- rf$proximity\npam.rf &lt;- pam(prox, 6)\n\n\n\n\n\n\n\n\n\nFigure 12: Regimes for 6 clusters - Random Forest clustering"
   },
   {
     "objectID": "cluster/cluster.html#clustering-of-duration-curve",
     "href": "cluster/cluster.html#clustering-of-duration-curve",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "2.3 Clustering of duration curve",
-    "text": "2.3 Clustering of duration curve\nThe duration curves were interpolated for clustering to obtain the same length of data for each station\n\n# make wider and interpolate -&gt; for same length of duration curves\ndf_durCur_w &lt;- df_durCur %&gt;% \n  select(code_bss, value_n, prob) %&gt;% \n  group_by(code_bss) %&gt;% \n  reframe(value = approx(prob, value_n, xout = seq(0,1,0.01))$y,\n          prob = approx(prob, value_n, xout = seq(0,1,0.01))$x) %&gt;% \n  ungroup() %&gt;% \n  pivot_wider(names_from = code_bss, values_from = value) %&gt;%\n  as_tibble() %&gt;% \n  select(-prob) %&gt;%\n  t()\n\n\n\n\n\n\n\n\n\nFigure 12: K-means clustering results for duration curves\n\n\n\n\n\nThere are really low values in cluster 2 and nearly no high values.\n\n\n\n\n\n\n\n\nFigure 13: K-means clustered duration curves"
+    "text": "2.3 Clustering of duration curve\nThe duration curves were interpolated for clustering to obtain the same length of data for each station\n\n# make wider and interpolate -&gt; for same length of duration curves\ndf_durCur_w &lt;- df_durCur %&gt;% \n  select(code_bss, value_n, prob) %&gt;% \n  group_by(code_bss) %&gt;% \n  reframe(value = approx(prob, value_n, xout = seq(0,1,0.01))$y,\n          prob = approx(prob, value_n, xout = seq(0,1,0.01))$x) %&gt;% \n  ungroup() %&gt;% \n  pivot_wider(names_from = code_bss, values_from = value) %&gt;%\n  as_tibble() %&gt;% \n  select(-prob) %&gt;%\n  t()\n\n\n\n\n\n\n\n\n\nFigure 13: K-means clustering results for duration curves\n\n\n\n\n\nThere are really low values in cluster 2 and nearly no high values.\n\n\n\n\n\n\n\n\nFigure 14: K-means clustered duration curves"
+  },
+  {
+    "objectID": "cluster/cluster.html#data-availability",
+    "href": "cluster/cluster.html#data-availability",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "3.1 Data availability",
+    "text": "3.1 Data availability\n\n\n\n\n\n\n\n\nFigure 15: Data availability before filtering\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 16: Data availability after filtering"
+  },
+  {
+    "objectID": "cluster/cluster.html#k-means-clustering-2",
+    "href": "cluster/cluster.html#k-means-clustering-2",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "3.2 K-means clustering",
+    "text": "3.2 K-means clustering\n\n\n\n\n\n\n\n\nFigure 17: K-means clustering for Rhône catchment\n\n\n\n\n\n\n\n\nFigure 1: Cluster dendogram for hierarchical clustering\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\nFigure 3: Map - Hierarchical clustering\nFigure 4: K-means clustering results for 4 clusters\nFigure 5: Regimes for 4 clusters - K-means clustering\nFigure 6: Map - K-means clustering\nFigure 7: Data availability before filtering\nFigure 8: Data availability after filtering\nFigure 9: K-means clustering results for 6 clusters\nFigure 10: Regimes for 6 clusters - K-means clustering\nFigure 11: Ratio of max(actRG1)/maxRG1 and geological units of HRUs\nFigure 12: Regimes for 6 clusters - Random Forest clustering\nFigure 13: K-means clustering results for duration curves\nFigure 14: K-means clustered duration curves\nFigure 15: Data availability before filtering\nFigure 16: Data availability after filtering\nFigure 17: K-means clustering for Rhône catchment"
+  },
+  {
+    "objectID": "cluster_map/cluster_map.html",
+    "href": "cluster_map/cluster_map.html",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "",
+    "text": "1 Location of piezometers\n\n\n\n\n\n\n\n\nFigure 1: Location of piezometers"
   }
 ]
