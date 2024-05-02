@@ -137,7 +137,7 @@
     "href": "cluster/cluster.html#k-means-clustering-2",
     "title": "Evaluation of the J2000 groundwater component",
     "section": "4.2 K-means clustering",
-    "text": "4.2 K-means clustering\n\n\n\n\n\n\n\n\nFigure 22: K-means clustering for Rhône catchment\n\n\n\n\n\n\n\n\nFigure 1: Cluster dendogram for hierarchical clustering\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\nFigure 3: Map - Hierarchical clustering\nFigure 4: K-means clustering results for 4 clusters\nFigure 5: Regimes for 4 clusters - K-means clustering\nFigure 6: Map - K-means clustering\nFigure 7: Data availability before filtering\nFigure 8: Data availability after filtering\nFigure 9: K-means clustering results for 6 clusters\nFigure 10: Regimes for 6 clusters - K-means clustering\nFigure 11: Ratio of max(actRG1)/maxRG1 and geological units of HRUs\nFigure 12: Number of stations per hgeoID for each clustered regime\nFigure 13: Regimes for 6 clusters - Random Forest clustering\nFigure 14: K-means clustering results for duration curves\nFigure 15: K-means clustered duration curves\nFigure 16: Wavelet analysis unclustered - global wavelet spectra\nFigure 17: Wavelet analysis clustered - global wavelet spectra\nFigure 18: Wavelet analysis clustered - SPLI\nFigure 19: Number of stations per hgeoID for each clustered wavelet spectrum\nFigure 20: Data availability before filtering\nFigure 21: Data availability after filtering\nFigure 22: K-means clustering for Rhône catchment"
+    "text": "4.2 K-means clustering\n\n\n\n\n\n\n\n\nFigure 22: K-means clustering for Rhône catchment\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 23: Number of stations per hgeoID for each clustered regime"
   },
   {
     "objectID": "rhone/rhone.html",
@@ -159,5 +159,12 @@
     "title": "Evaluation of the J2000 groundwater component",
     "section": "",
     "text": "1 Location of piezometers\n\n\n\n\n\n\n\n\nFigure 1: Location of piezometers"
+  },
+  {
+    "objectID": "cluster/cluster.html#clustering-of-wavelet-analysis-1",
+    "href": "cluster/cluster.html#clustering-of-wavelet-analysis-1",
+    "title": "Evaluation of the J2000 groundwater component",
+    "section": "4.3 Clustering of wavelet analysis",
+    "text": "4.3 Clustering of wavelet analysis\n\n\n\n\n\n\n\n\nFigure 24: Wavelet analysis unclustered - global wavelet spectra\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 25: Wavelet analysis clustered - global wavelet spectra\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 26: Wavelet analysis clustered - SPLI\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 27: Number of stations per hgeoID for each clustered wavelet spectrum\n\n\n\n\n\n\n\n\nFigure 1: Cluster dendogram for hierarchical clustering\nFigure 2: Regimes for 4 clusters - Hierarchical clustering\nFigure 3: Map - Hierarchical clustering\nFigure 4: K-means clustering results for 4 clusters\nFigure 5: Regimes for 4 clusters - K-means clustering\nFigure 6: Map - K-means clustering\nFigure 7: Data availability before filtering\nFigure 8: Data availability after filtering\nFigure 9: K-means clustering results for 6 clusters\nFigure 10: Regimes for 6 clusters - K-means clustering\nFigure 11: Ratio of max(actRG1)/maxRG1 and geological units of HRUs\nFigure 12: Number of stations per hgeoID for each clustered regime\nFigure 13: Regimes for 6 clusters - Random Forest clustering\nFigure 14: K-means clustering results for duration curves\nFigure 15: K-means clustered duration curves\nFigure 16: Wavelet analysis unclustered - global wavelet spectra\nFigure 17: Wavelet analysis clustered - global wavelet spectra\nFigure 18: Wavelet analysis clustered - SPLI\nFigure 19: Number of stations per hgeoID for each clustered wavelet spectrum\nFigure 20: Data availability before filtering\nFigure 21: Data availability after filtering\nFigure 22: K-means clustering for Rhône catchment\nFigure 23: Number of stations per hgeoID for each clustered regime\nFigure 24: Wavelet analysis unclustered - global wavelet spectra\nFigure 25: Wavelet analysis clustered - global wavelet spectra\nFigure 26: Wavelet analysis clustered - SPLI\nFigure 27: Number of stations per hgeoID for each clustered wavelet spectrum"
   }
 ]
