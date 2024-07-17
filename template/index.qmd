@@ -1,0 +1,35 @@
+---
+title: "Template for Quarto website in INRAE design"
+subtitle: "Subtitle"
+author: "Author"
+date: last-modified
+date-format: "DD-MM-YYYY"
+description: ""
+title-block-banner: "#27445C"
+format: 
+  html:
+    embed-resources: false
+    smooth-scroll: true
+    theme: cosmo
+    fontcolor: black
+    toc: true
+    toc-location: left
+    toc-title: Summary
+    toc-depth: 3
+    number-sections: true
+css: styles.css
+execute:
+  echo: false
+  warning: false
+lightbox: auto
+---
+
+
+
+# Chapter 1
+
+This is the content of the main page
+
+# Chapter 2 
+
+## Chapter 2.1

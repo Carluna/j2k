@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  favicon: images/android-chrome-192x192.png
+  title: ""
+  navbar: 
+    logo: images/Logo-INRAE_Transparent.png
+    background: "#27445C"
+    foreground: "white"
+    left:
+      - href: index.qmd
+        text: Mainpage
+      - href: 1_section.qmd
+        text: Section 1
+      - text: Section 2 and 3
+        menu: 
+        - text: Section 2
+          href: 2_section.qmd
+        - text: Section 3
+          href: 3_section.qmd
+      - about.qmd
+    tools:
+      - icon: github
+        href:  https://github.com/
+    pinned: true
+    
+    
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    page-layout: full
+
+
+

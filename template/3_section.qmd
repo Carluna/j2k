@@ -1,0 +1,24 @@
+---
+title: "Title of section 3"
+subtitle: "Subtitle"
+author: "Author"
+date: last-modified
+date-format: "DD-MM-YYYY"
+description: ""
+title-block-banner: "#27445C"
+format: 
+  html:
+    embed-resources: false
+    smooth-scroll: true
+    theme: cosmo
+    fontcolor: black
+    toc: true
+    toc-location: left
+    toc-title: Summary
+    toc-depth: 3
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+lightbox: auto
+---
